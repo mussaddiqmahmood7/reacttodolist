@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Input from "./components/input";
 import Search from "./components/search";
+import Logo from "./images/todoLogo.png";
+
 import Todo from "./module";
 import "./App.css";
 
@@ -347,6 +349,25 @@ const App = () => {
         <div className="pendingSection">
           <h2>Pending</h2>
           {pendingDiv}
+        </div>
+      </div>
+      <div className="footer">
+        <div className="slogan">
+          <h1>Fantech</h1>
+          <hr />
+          <h4>Code the future,</h4>
+          <h4>One line at a time.</h4>
+        </div>
+
+        <div className="image">
+          <img src={Logo} alt="logo" />
+        </div>
+
+        <div className="slogan">
+          <h1>ToDo List</h1>
+          <hr />
+          <h4>Organize your life,</h4>
+          <h4>One task at a time.</h4>
         </div>
       </div>
     </div>
